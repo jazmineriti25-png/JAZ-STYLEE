@@ -3,142 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaz & Style - Inicio</title>
+    <title>Jaz & Style | Editorial & Luxe</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
 
-    <!-- ENCABEZADO -->
+    <!-- NAVEGACIÓN -->
     <header>
-
-        <h2>Jaz & Style</h2>
-
+        <div class="brand">
+            <h2>Jaz & Style</h2>
+            <span>EST. 2026 • EDITORIAL</span>
+        </div>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Ropa</a></li>
-                <li><a href="#">Maquillaje</a></li>
-                <li><a href="#">Accesorios</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#editorial">Revista</a></li>
+                <li><a href="#fashion-facts">Fashion Notes</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <hr>
-
-
-    <!-- SECCIÓN PRINCIPAL -->
-    <section class="principal">
-
-        <h1>Jaz & Style</h1>
-
-        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b" 
-             alt="Ropa y moda" width="400">
-
-        <p>
-            Moda, maquillaje y accesorios para crear tu propio estilo
-            y sentirte increíble en cada ocasión.
-        </p>
-
+    <!-- HERO BANNER -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <span class="tagline">✦ FOREVER BLESSED ✧</span>
+            <h1>FASHION & SWAG</h1>
+            <p>Elegancia nocturna, destellos de plata, cuero negro y estética Dark Coquette.</p>
+            <a href="#editorial" class="btn-luxe">Explorar Edición</a>
+        </div>
     </section>
 
-    <hr>
-
-
-    <!-- QUÉ OFRECEMOS -->
-    <section class="ofrecemos">
-
-        <h2>¿Qué ofrecemos?</h2>
-
-
-        <div class="tarjeta">
-
-            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d"
-                 alt="Ropa de moda" width="250">
-
-            <h3>Ropa de moda</h3>
-
-            <p>
-                Encuentra prendas modernas y cómodas para crear
-                outfits para cualquier ocasión.
-            </p>
-
+    <!-- SECCIÓN REVISTA CON ENLACES FUNCIONALES -->
+    <section id="editorial" class="editorial">
+        <div class="section-title">
+            <span>VOL. 01 — MAGAZINE ISSUE</span>
+            <h2>VOGUE VIBES & LUXURY</h2>
         </div>
 
-        <hr>
-
-
-        <div class="tarjeta">
-
-            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9"
-                 alt="Maquillaje" width="250">
-
-            <h3>Maquillaje</h3>
-
-            <p>
-                Productos de maquillaje para resaltar tu belleza
-                y crear diferentes looks.
-            </p>
-
+        <!-- Filtros interactivos -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="vogue">Vogue</button>
+            <button class="filter-btn" data-filter="luxe">Luxe</button>
+            <button class="filter-btn" data-filter="y2k">Y2K</button>
         </div>
 
-        <hr>
+        <div class="editorial-grid">
+            <!-- TARJETA 1 -->
+            <article class="card-magazine" data-category="vogue">
+                <a href="articulo-beauty.html" class="card-link">
+                    <div class="tag-vogue">VOGUE</div>
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=800');"></div>
+                    <div class="card-info">
+                        <h3>Beauty & Gloss Essentials</h3>
+                        <p>Labiales rosados, mirada intensa y estética vintage para la temporada.</p>
+                        <span class="read-more">Leer artículo →</span>
+                    </div>
+                </a>
+            </article>
 
+            <!-- TARJETA 2 -->
+            <article class="card-magazine" data-category="luxe">
+                <a href="articulo-luxury.html" class="card-link">
+                    <div class="tag-vogue">LUXE</div>
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800');"></div>
+                    <div class="card-info">
+                        <h3>Night Out Luxury</h3>
+                        <p>Texturas de cuero negro, accesorios plateados y elegancia nocturna.</p>
+                        <span class="read-more">Leer artículo →</span>
+                    </div>
+                </a>
+            </article>
 
-        <div class="tarjeta">
-
-            <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d"
-                 alt="Accesorios de moda" width="250">
-
-            <h3>Accesorios</h3>
-
-            <p>
-                Complementa tus outfits con bolsos, aretes,
-                collares y otros accesorios.
-            </p>
-
+            <!-- TARJETA 3 -->
+            <article class="card-magazine" data-category="y2k">
+                <a href="articulo-vanity.html" class="card-link">
+                    <div class="tag-vogue">Y2K</div>
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1547887537-6158d64c35b3?q=80&w=800');"></div>
+                    <div class="card-info">
+                        <h3>Vanity Confidential</h3>
+                        <p>Fragancias de culto, actitud rebelde y alta costura contemporánea.</p>
+                        <span class="read-more">Leer artículo →</span>
+                    </div>
+                </a>
+            </article>
         </div>
-
     </section>
 
-    <hr>
+    <!-- FASHION FACTS -->
+    <section id="fashion-facts" class="fashion-facts">
+        <div class="section-title">
+            <span>DAILY FASHION CHRONICLES</span>
+            <h2>Sabías qué... en la Moda</h2>
+        </div>
 
+        <div class="facts-container">
+            <div class="fact-card">
+                <div class="fact-number">01</div>
+                <h3>Origen de los Tacones</h3>
+                <p>En el siglo X, los tacones eran usados por jinetes persas para fijar los pies en los estribos. En el siglo XVII la aristocracia europea los adoptó como símbolo de estatus.</p>
+            </div>
 
-    <!-- CONTACTO -->
-    <section class="contacto">
+            <div class="fact-card highlight">
+                <div class="fact-number">02</div>
+                <h3>El Tacón Stiletto</h3>
+                <p>El icónico tacón de aguja fue perfeccionado en la década de 1950 por Christian Dior y Roger Vivier, transformando el calzado de alta costura.</p>
+            </div>
 
-        <h2>Contacto rápido</h2>
-
-        <p><strong>Zona:</strong> Jalpan de Serra, Querétaro</p>
-
-        <p><strong>Horario:</strong> Lunes a sábado de 10:00 a 19:00 horas</p>
-
-        <p><strong>Teléfono:</strong> 441 000 0000</p>
-
-        <p><strong>Correo:</strong> jazandstyle@gmail.com</p>
-
+            <div class="fact-card">
+                <div class="fact-number">03</div>
+                <h3>El Animal Print</h3>
+                <p>Christian Dior fue el primer diseñador en 1947 en adaptar el estampado de leopardo a tejidos de seda, convirtiéndolo en un básico sofisticado.</p>
+            </div>
+        </div>
     </section>
 
-    <hr>
-
-
-    <!-- PIE DE PÁGINA -->
+    <!-- FOOTER -->
     <footer>
-
-        <p>
-            © 2026 Jaz & Style. Todos los derechos reservados.
-        </p>
-
-        <br>
-
-        <p>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">WhatsApp</a>
-        </p>
-
+        <h3>Jaz & Style</h3>
+        <p>Angel Energy • Y2K Aesthetics • High Fashion</p>
+        <span class="copy">&copy; 2026 Jaz & Style. Todos los derechos reservados.</span>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
