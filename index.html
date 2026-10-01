@@ -18,6 +18,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#editorial">Revista</a></li>
+                <li><a href="#inspiracion">Inspiración</a></li>
                 <li><a href="#fashion-facts">Fashion Notes</a></li>
             </ul>
         </nav>
@@ -26,9 +27,9 @@
     <!-- HERO BANNER -->
     <section id="hero" class="hero">
         <div class="hero-content">
-            <span class="tagline">✦ FOREVER BLESSED ✧</span>
-            <h1>FASHION & SWAG</h1>
-            <p>Elegancia nocturna, destellos de plata, cuero negro y estética Dark Coquette.</p>
+            <span class="tagline">REVISTA DIGITAL • MODA & CULTURA</span>
+            <h1>JAZ & STYLE</h1>
+            <p>Portadas, editoriales visuales y tendencias de moda en una revista independiente.</p>
             <a href="#editorial" class="btn-luxe">Explorar Edición</a>
         </div>
     </section>
@@ -37,52 +38,52 @@
     <section id="editorial" class="editorial">
         <div class="section-title">
             <span>VOL. 01 — MAGAZINE ISSUE</span>
-            <h2>VOGUE VIBES & LUXURY</h2>
+            <h2>PORTADAS, MODA Y CULTURA VISUAL</h2>
         </div>
 
         <!-- Filtros interactivos -->
         <div class="filter-container">
-            <button class="filter-btn active" data-filter="all">Todos</button>
-            <button class="filter-btn" data-filter="vogue">Vogue</button>
-            <button class="filter-btn" data-filter="luxe">Luxe</button>
-            <button class="filter-btn" data-filter="y2k">Y2K</button>
+            <button class="filter-btn active" data-filter="all" aria-pressed="true">Todos</button>
+            <button class="filter-btn" data-filter="desfile" aria-pressed="false">Desfiles</button>
+            <button class="filter-btn" data-filter="collage" aria-pressed="false">Collages</button>
+            <button class="filter-btn" data-filter="portada" aria-pressed="false">Portadas</button>
         </div>
 
         <div class="editorial-grid">
             <!-- TARJETA 1 -->
-            <article class="card-magazine" data-category="vogue">
+            <article class="card-magazine" data-category="desfile">
                 <a href="articulo-beauty.html" class="card-link">
-                    <div class="tag-vogue">VOGUE</div>
-                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=800');"></div>
+                    <div class="tag-vogue">DESFILE</div>
+                    <div class="card-img" style="background-image: url('img/1m.jpeg');"></div>
                     <div class="card-info">
-                        <h3>Beauty & Gloss Essentials</h3>
-                        <p>Labiales rosados, mirada intensa y estética vintage para la temporada.</p>
+                        <h3>Victoria’s Secret: moda en escena</h3>
+                        <p>Una silueta bajo luces rosas convierte el desfile en una imagen inolvidable.</p>
                         <span class="read-more">Leer artículo →</span>
                     </div>
                 </a>
             </article>
 
             <!-- TARJETA 2 -->
-            <article class="card-magazine" data-category="luxe">
+            <article class="card-magazine" data-category="collage">
                 <a href="articulo-luxury.html" class="card-link">
-                    <div class="tag-vogue">LUXE</div>
-                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800');"></div>
+                    <div class="tag-vogue">COLLAGE</div>
+                    <div class="card-img" style="background-image: url('img/2m.jpeg');"></div>
                     <div class="card-info">
-                        <h3>Night Out Luxury</h3>
-                        <p>Texturas de cuero negro, accesorios plateados y elegancia nocturna.</p>
+                        <h3>Vogue en collage: referencias y estilo</h3>
+                        <p>Portadas, recortes y fotografía se unen en una historia visual de moda.</p>
                         <span class="read-more">Leer artículo →</span>
                     </div>
                 </a>
             </article>
 
             <!-- TARJETA 3 -->
-            <article class="card-magazine" data-category="y2k">
+            <article class="card-magazine" data-category="portada">
                 <a href="articulo-vanity.html" class="card-link">
-                    <div class="tag-vogue">Y2K</div>
-                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1547887537-6158d64c35b3?q=80&w=800');"></div>
+                    <div class="tag-vogue">PORTADA</div>
+                    <div class="card-img" style="background-image: url('img/3m.jpeg');"></div>
                     <div class="card-info">
-                        <h3>Vanity Confidential</h3>
-                        <p>Fragancias de culto, actitud rebelde y alta costura contemporánea.</p>
+                        <h3>Star Power: una portada con actitud</h3>
+                        <p>Titulares, cámara y accesorios construyen una imagen editorial de alto impacto.</p>
                         <span class="read-more">Leer artículo →</span>
                     </div>
                 </a>
@@ -90,30 +91,176 @@
         </div>
     </section>
 
+    <section class="moodboard" id="inspiracion" aria-labelledby="moodboard-title">
+        <div class="section-title">
+            <span>ARCHIVO VISUAL</span>
+            <h2 id="moodboard-title">Moodboard: portadas y editoriales</h2>
+        </div>
+
+        <div class="moodboard-grid">
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar portada de desfile">
+                    <img src="img/1m.jpeg" alt="Silueta frente a una escenografía rosa de Victoria’s Secret" loading="lazy">
+                    <figcaption><span>01 / DESFILE</span>Victoria’s Secret bajo los focos</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar collage editorial">
+                    <img src="img/2m.jpeg" alt="Collage editorial con portadas, recortes y una modelo" loading="lazy">
+                    <figcaption><span>02 / COLLAGE</span>Referencias de moda</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar portada Star Power">
+                    <img src="img/3m.jpeg" alt="Portada editorial Star Power con cámara y gafas" loading="lazy">
+                    <figcaption><span>03 / PORTADA</span>Star Power</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto: Tu estilo, tus reglas">
+                    <img src="img/4m.jpeg" alt="Imagen editorial de la colección" loading="lazy">
+                    <figcaption><span>04 / EDITORIAL</span>Inspiración de temporada</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto: Detalles que destacan">
+                    <img src="img/5m.jpeg" alt="Imagen editorial de la colección" loading="lazy">
+                    <figcaption><span>05 / DETALLES</span>Pequeños acentos</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto: Contrastes de temporada">
+                    <img src="img/6m.jpeg" alt="Imagen editorial de la colección" loading="lazy">
+                    <figcaption><span>06 / ESTILO</span>Una nueva perspectiva</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto editorial 7">
+                    <img src="img/7m.jpeg" alt="Imagen editorial de moda, número 7" loading="lazy">
+                    <figcaption><span>07 / EDITORIAL</span>Inspiración de temporada</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto editorial 8">
+                    <img src="img/8m.jpeg" alt="Imagen editorial de moda, número 8" loading="lazy">
+                    <figcaption><span>08 / EDITORIAL</span>Detalles con carácter</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto editorial 9">
+                    <img src="img/9m.jpeg" alt="Imagen editorial de moda, número 9" loading="lazy">
+                    <figcaption><span>09 / EDITORIAL</span>Una idea para combinar</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto editorial 10">
+                    <img src="img/10m.jpeg" alt="Imagen editorial de moda, número 10" loading="lazy">
+                    <figcaption><span>10 / EDITORIAL</span>Claves de estilo</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto editorial 11">
+                    <img src="img/11m.jpeg" alt="Imagen editorial de moda, número 11" loading="lazy">
+                    <figcaption><span>11 / EDITORIAL</span>Selección de temporada</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto editorial 12">
+                    <img src="img/12m.jpeg" alt="Imagen editorial de moda, número 12" loading="lazy">
+                    <figcaption><span>12 / EDITORIAL</span>Una mirada diferente</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto editorial 13">
+                    <img src="img/13m.jpeg" alt="Imagen editorial de moda, número 13" loading="lazy">
+                    <figcaption><span>13 / EDITORIAL</span>Texturas y formas</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto editorial 14">
+                    <img src="img/14m.jpeg" alt="Imagen editorial de moda, número 14" loading="lazy">
+                    <figcaption><span>14 / EDITORIAL</span>Esenciales del look</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto editorial 15">
+                    <img src="img/15m.jpeg" alt="Imagen editorial de moda, número 15" loading="lazy">
+                    <figcaption><span>15 / EDITORIAL</span>Notas de inspiración</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto editorial 16">
+                    <img src="img/16m.jpeg" alt="Imagen editorial de moda, número 16" loading="lazy">
+                    <figcaption><span>16 / EDITORIAL</span>Toques personales</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto editorial 17">
+                    <img src="img/17m.jpeg" alt="Imagen editorial de moda, número 17" loading="lazy">
+                    <figcaption><span>17 / EDITORIAL</span>Selección de la revista</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto editorial 18">
+                    <img src="img/18m.jpeg" alt="Imagen editorial de moda, número 18" loading="lazy">
+                    <figcaption><span>18 / EDITORIAL</span>El detalle final</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto editorial 19">
+                    <img src="img/19m.jpeg" alt="Imagen editorial de moda, número 19" loading="lazy">
+                    <figcaption><span>19 / EDITORIAL</span>Estilo en imágenes</figcaption>
+                </button>
+            </figure>
+            <figure class="moodboard-item">
+                <button class="moodboard-trigger" type="button" aria-label="Ampliar foto editorial 20">
+                    <img src="img/20m.jpeg" alt="Imagen editorial de moda, número 20" loading="lazy">
+                    <figcaption><span>20 / EDITORIAL</span>Fin de la selección</figcaption>
+                </button>
+            </figure>
+        </div>
+
+        <aside class="trend-note">
+            <span class="trend-note-mark">J&S</span>
+            <p><strong>El hilo de esta edición:</strong> portadas con identidad, collages editoriales y detalles que cuentan una historia visual.</p>
+            <a href="#editorial">Descubrir artículos <span aria-hidden="true">↗</span></a>
+        </aside>
+    </section>
+
+    <dialog class="lightbox" id="moodboard-lightbox" aria-label="Galería de imágenes">
+        <button class="lightbox-close" type="button" aria-label="Cerrar imagen" title="Cerrar">&times;</button>
+        <button class="lightbox-nav" type="button" data-gallery-prev aria-label="Foto anterior" title="Foto anterior">&#8249;</button>
+        <figure class="lightbox-figure">
+            <img class="lightbox-image" src="" alt="">
+            <figcaption class="lightbox-caption"></figcaption>
+        </figure>
+        <button class="lightbox-nav" type="button" data-gallery-next aria-label="Foto siguiente" title="Foto siguiente">&#8250;</button>
+    </dialog>
+
     <!-- FASHION FACTS -->
     <section id="fashion-facts" class="fashion-facts">
         <div class="section-title">
-            <span>DAILY FASHION CHRONICLES</span>
-            <h2>Sabías qué... en la Moda</h2>
+            <span>NOTAS EDITORIALES</span>
+            <h2>Cómo se construye una imagen de moda</h2>
         </div>
 
         <div class="facts-container">
             <div class="fact-card">
                 <div class="fact-number">01</div>
-                <h3>Origen de los Tacones</h3>
-                <p>En el siglo X, los tacones eran usados por jinetes persas para fijar los pies en los estribos. En el siglo XVII la aristocracia europea los adoptó como símbolo de estatus.</p>
+                <h3>La silueta bajo los focos</h3>
+                <p>La luz y el contraste separan la figura del fondo y hacen que la pose se convierta en el centro de la portada.</p>
             </div>
 
             <div class="fact-card highlight">
                 <div class="fact-number">02</div>
-                <h3>El Tacón Stiletto</h3>
-                <p>El icónico tacón de aguja fue perfeccionado en la década de 1950 por Christian Dior y Roger Vivier, transformando el calzado de alta costura.</p>
+                <h3>El collage como relato</h3>
+                <p>Combinar recortes, fotografías y titulares crea ritmo visual y reúne distintas referencias en una sola composición.</p>
             </div>
 
             <div class="fact-card">
                 <div class="fact-number">03</div>
-                <h3>El Animal Print</h3>
-                <p>Christian Dior fue el primer diseñador en 1947 en adaptar el estampado de leopardo a tejidos de seda, convirtiéndolo en un básico sofisticado.</p>
+                <h3>Los objetos también cuentan</h3>
+                <p>Una cámara, unos lentes o una revista pueden dar contexto y personalidad a una imagen editorial sin quitarle protagonismo a la portada.</p>
             </div>
         </div>
     </section>
@@ -121,7 +268,7 @@
     <!-- FOOTER -->
     <footer>
         <h3>Jaz & Style</h3>
-        <p>Angel Energy • Y2K Aesthetics • High Fashion</p>
+        <p>Portadas • Editoriales • Cultura de moda</p>
         <span class="copy">&copy; 2026 Jaz & Style. Todos los derechos reservados.</span>
     </footer>
 
